@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		27AF03F91AD064BF00C43C5D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27AF03F81AD064BF00C43C5D /* main.cpp */; };
+		27AF04011AD064DF00C43C5D /* EnemyClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27AF03FF1AD064DF00C43C5D /* EnemyClass.cpp */; };
+		27AF04041AD0659400C43C5D /* Elements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27AF04021AD0659400C43C5D /* Elements.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		27AF03F51AD064BE00C43C5D /* Enemy Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Enemy Game"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AF03F81AD064BF00C43C5D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		27AF03FF1AD064DF00C43C5D /* EnemyClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnemyClass.cpp; sourceTree = "<group>"; };
+		27AF04001AD064DF00C43C5D /* EnemyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnemyClass.h; sourceTree = "<group>"; };
+		27AF04021AD0659400C43C5D /* Elements.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Elements.cpp; sourceTree = "<group>"; };
+		27AF04031AD0659400C43C5D /* Elements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elements.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				27AF03F81AD064BF00C43C5D /* main.cpp */,
+				27AF03FF1AD064DF00C43C5D /* EnemyClass.cpp */,
+				27AF04001AD064DF00C43C5D /* EnemyClass.h */,
+				27AF04021AD0659400C43C5D /* Elements.cpp */,
+				27AF04031AD0659400C43C5D /* Elements.h */,
 			);
 			path = "Enemy Game";
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AF04041AD0659400C43C5D /* Elements.cpp in Sources */,
 				27AF03F91AD064BF00C43C5D /* main.cpp in Sources */,
+				27AF04011AD064DF00C43C5D /* EnemyClass.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

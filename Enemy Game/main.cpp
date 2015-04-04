@@ -7,9 +7,17 @@
 //
 
 #include <iostream>
+#include "EnemyClass.h"
 
-int main(int argc, const char * argv[]) {
-  // insert code here...
-  std::cout << "Hello, World!\n";
-    return 0;
+int main() {
+
+  Enemy firstEnemy("Klaus", 10);
+  firstEnemy.Print();
+  firstEnemy.getDamage(4);
+  firstEnemy.Print();
+  firstEnemy.getDamage(5);
+  firstEnemy.getDamage(3);
+  
+  
+  return 0;
 }
