@@ -26,17 +26,17 @@ Enemy::Enemy(std::string string_code){
   // to be implemented
 };
   
-void Enemy::getDamage(int damage){
+auto Enemy::getDamage(int damage) -> void{
   current_healpoints_ -= damage;
   std::cout << name_ << " hat " << damage << " Schaden erhalten!" << std::endl;
   Enemy::isDead();
 };
 
-int Enemy::doDamage(){
+auto Enemy::doDamage() -> int{
   return 1;
 };
 
-void Enemy::isDead(){
+auto Enemy::isDead() -> void{
   if (current_healpoints_ <= 0) {
     current_healpoints_ = 0;
     std::cout << name_ << " wurde besiegt!" << std::endl;
@@ -44,7 +44,7 @@ void Enemy::isDead(){
   }
 };
 
-void Enemy::Print(){
+auto Enemy::Print() -> void{
   std::cout << "Name des Gegners: " << name_ << std::endl;
   std::cout << "Aktuelle und Maximale HP: " << current_healpoints_ << "/" << max_healthpoints_ << std::endl;
 //  std::cout << "Elementtyp: " << element_.Print() << std::endl;

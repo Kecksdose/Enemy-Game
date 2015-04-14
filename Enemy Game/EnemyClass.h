@@ -19,12 +19,12 @@ public:
   Enemy(std::string name, int max_healthpoints/*, Elements element*/); // normal constructor
   Enemy(std::string string_code); // special constructor
   
-  void getDamage(int damage); // enemy gots damage
-  int doDamage(); // enemy does damage
+  auto getDamage(int damage) -> void; // enemy gots damage
+  auto doDamage() -> int; // enemy does damage
   
-  void isDead(); // checks, whether the enemy is dead
+  auto isDead() -> void; // checks, whether the enemy is dead
   
-  void Print(); // Prints all informations
+  auto Print() -> void; // Prints all informations
   
 private:
   std::string name_;
